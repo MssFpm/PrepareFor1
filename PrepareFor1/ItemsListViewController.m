@@ -8,6 +8,7 @@
 
 #import "ItemsListViewController.h"
 #import "XMLParserDelegate.h"
+#import "EditViewController.h"
 
 @interface ItemsListViewController ()
 
@@ -53,9 +54,10 @@
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     id appDelegate = [[UIApplication sharedApplication] delegate];
     id items = [appDelegate items];
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"SELECTED" message:[items objectAtIndex:indexPath.item] delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
-    [alert show];
-}
+    EditViewController *editController = [[EditViewController alloc] initWithNibName:@"EditViewController" bundle:nil itemIndex:indexPath.row itemValue:[items objectAtIndex:indexPath.row]];
+    editController.listController = self;
+    [[self navigationController] pushViewController:editController animated:YES];
+ }
 
 
 @synthesize currentName;

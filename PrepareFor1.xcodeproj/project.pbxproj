@@ -25,6 +25,8 @@
 		9485C0B216739E9A00FE79EE /* URLRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9485C0B116739E9A00FE79EE /* URLRequestDelegate.m */; };
 		948CBD0B1676629300E420D6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CBD0A1676629300E420D6 /* Item.m */; };
 		948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */; };
+		948EADD9167CBBE400F5EAD0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948EADD7167CBBE400F5EAD0 /* EditViewController.m */; };
+		948EADDA167CBBE400F5EAD0 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948EADD8167CBBE400F5EAD0 /* EditViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -55,6 +57,9 @@
 		948CBD0A1676629300E420D6 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
 		948CBD0D1676637F00E420D6 /* XMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserDelegate.h; sourceTree = "<group>"; };
 		948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserDelegate.m; sourceTree = "<group>"; };
+		948EADD6167CBBE400F5EAD0 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
+		948EADD7167CBBE400F5EAD0 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
+		948EADD8167CBBE400F5EAD0 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +125,9 @@
 				948CBD0D1676637F00E420D6 /* XMLParserDelegate.h */,
 				948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */,
 				9485C083167393C800FE79EE /* Frameworks */,
+				948EADD6167CBBE400F5EAD0 /* EditViewController.h */,
+				948EADD7167CBBE400F5EAD0 /* EditViewController.m */,
+				948EADD8167CBBE400F5EAD0 /* EditViewController.xib */,
 			);
 			path = PrepareFor1;
 			sourceTree = "<group>";
@@ -195,6 +203,7 @@
 				9485C09D167393C800FE79EE /* Default-568h@2x.png in Resources */,
 				9485C0AA167394FA00FE79EE /* MainViewController.xib in Resources */,
 				9485C0AF167395BC00FE79EE /* ItemsListViewController.xib in Resources */,
+				948EADDA167CBBE400F5EAD0 /* EditViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +222,7 @@
 				9485C0B216739E9A00FE79EE /* URLRequestDelegate.m in Sources */,
 				948CBD0B1676629300E420D6 /* Item.m in Sources */,
 				948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */,
+				948EADD9167CBBE400F5EAD0 /* EditViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
