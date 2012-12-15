@@ -8,13 +8,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ItemsListViewController : UIViewController {
-     NSMutableArray *items;
-}
+@interface ItemsListViewController : UIViewController
+
 @property (weak, nonatomic) IBOutlet UITableView *itemsList;
 
 //temp
-@property (retain) NSMutableArray *items;
 @property (retain) NSMutableString *currentName;
 @property (assign) BOOL isTagName;
 

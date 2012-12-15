@@ -23,6 +23,8 @@
 		9485C0AE167395BC00FE79EE /* ItemsListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9485C0AC167395BC00FE79EE /* ItemsListViewController.m */; };
 		9485C0AF167395BC00FE79EE /* ItemsListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9485C0AD167395BC00FE79EE /* ItemsListViewController.xib */; };
 		9485C0B216739E9A00FE79EE /* URLRequestDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9485C0B116739E9A00FE79EE /* URLRequestDelegate.m */; };
+		948CBD0B1676629300E420D6 /* Item.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CBD0A1676629300E420D6 /* Item.m */; };
+		948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +51,10 @@
 		9485C0AD167395BC00FE79EE /* ItemsListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ItemsListViewController.xib; sourceTree = "<group>"; };
 		9485C0B016739E9A00FE79EE /* URLRequestDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLRequestDelegate.h; sourceTree = "<group>"; };
 		9485C0B116739E9A00FE79EE /* URLRequestDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLRequestDelegate.m; sourceTree = "<group>"; };
+		948CBD091676629300E420D6 /* Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Item.h; sourceTree = "<group>"; };
+		948CBD0A1676629300E420D6 /* Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Item.m; sourceTree = "<group>"; };
+		948CBD0D1676637F00E420D6 /* XMLParserDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XMLParserDelegate.h; sourceTree = "<group>"; };
+		948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XMLParserDelegate.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,7 +76,6 @@
 			isa = PBXGroup;
 			children = (
 				9485C08C167393C800FE79EE /* PrepareFor1 */,
-				9485C083167393C800FE79EE /* Frameworks */,
 				9485C081167393C800FE79EE /* Products */,
 			);
 			sourceTree = "<group>";
@@ -92,6 +97,7 @@
 				9485C08A167393C800FE79EE /* CoreData.framework */,
 			);
 			name = Frameworks;
+			path = ..;
 			sourceTree = "<group>";
 		};
 		9485C08C167393C800FE79EE /* PrepareFor1 */ = {
@@ -100,6 +106,8 @@
 				9485C095167393C800FE79EE /* AppDelegate.h */,
 				9485C096167393C800FE79EE /* AppDelegate.m */,
 				9485C09E167393C800FE79EE /* PrepareFor1.xcdatamodeld */,
+				948CBD091676629300E420D6 /* Item.h */,
+				948CBD0A1676629300E420D6 /* Item.m */,
 				9485C08D167393C800FE79EE /* Supporting Files */,
 				9485C0A6167394FA00FE79EE /* MainViewController.h */,
 				9485C0A7167394FA00FE79EE /* MainViewController.m */,
@@ -109,6 +117,9 @@
 				9485C0AD167395BC00FE79EE /* ItemsListViewController.xib */,
 				9485C0B016739E9A00FE79EE /* URLRequestDelegate.h */,
 				9485C0B116739E9A00FE79EE /* URLRequestDelegate.m */,
+				948CBD0D1676637F00E420D6 /* XMLParserDelegate.h */,
+				948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */,
+				9485C083167393C800FE79EE /* Frameworks */,
 			);
 			path = PrepareFor1;
 			sourceTree = "<group>";
@@ -200,6 +211,8 @@
 				9485C0A9167394FA00FE79EE /* MainViewController.m in Sources */,
 				9485C0AE167395BC00FE79EE /* ItemsListViewController.m in Sources */,
 				9485C0B216739E9A00FE79EE /* URLRequestDelegate.m in Sources */,
+				948CBD0B1676629300E420D6 /* Item.m in Sources */,
+				948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +325,7 @@
 				9485C0A5167393C800FE79EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

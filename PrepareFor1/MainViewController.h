@@ -12,7 +12,9 @@
 @property (weak, nonatomic) IBOutlet UIButton *getLIstButton;
 @property (weak, nonatomic) IBOutlet UIButton *storeListButton;
 @property (weak, nonatomic) IBOutlet UIButton *goToListButton;
+@property NSMutableArray *items;
 - (IBAction)loadListFromServer:(id)sender;
 - (IBAction)goToItemsList:(id)sender;
+- (IBAction)storeListToDatabase:(id)sender;
 
 @end
