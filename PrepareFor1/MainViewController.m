@@ -9,7 +9,9 @@
 #import "MainViewController.h"
 #import "URLRequestDelegate.h"
 #import "ItemsListViewController.h"
+#import "DbListViewController.h"
 #import "Item.h"
+#import "AppDelegate.h"
 
 @interface MainViewController ()
 
@@ -29,8 +31,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [[self storeListButton] setHidden:TRUE];
-    [[self goToListButton] setHidden:TRUE];
+    [self hideButtons];
     // Do any additional setup after loading the view from its nib.
 }
 
@@ -42,6 +43,8 @@
 
 - (IBAction)loadListFromServer:(id)sender {
     self.items = [[NSMutableArray alloc] init];
+    AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
+    appDelegate.items = [[NSMutableArray alloc] init];
     
     NSString *url = @"http://secure-citadel-8722.herokuapp.com/api/items";
     NSURLRequest *request = [NSURLRequest requestWithURL:[NSURL URLWithString:url]];
@@ -95,5 +98,22 @@
 //        NSLog(@"ARRAY ---->%@", [[objects objectAtIndex:i] valueForKey:@"age"]);
 //    }
 
+}
+
+- (IBAction)goToDbList:(id)sender {
+    DbListViewController *dbListViewController = [[DbListViewController alloc] initWithNibName:@"DbListViewController" bundle:nil];
+    [self.navigationController pushViewController:dbListViewController animated:YES];
+}
+
+- (void) hideButtons {
+    [self.goToListButton setHidden:YES];
+    [self.storeListButton setHidden:YES];
+    [self.goToDbListButton setHidden:YES];
+}
+
+- (void) showButtons {
+    [self.goToListButton setHidden:NO];
+    [self.storeListButton setHidden:NO];
+    [self.goToDbListButton setHidden:NO];
 }
 @end

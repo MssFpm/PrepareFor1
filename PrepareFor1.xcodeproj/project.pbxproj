@@ -27,6 +27,8 @@
 		948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 948CBD0E1676637F00E420D6 /* XMLParserDelegate.m */; };
 		948EADD9167CBBE400F5EAD0 /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 948EADD7167CBBE400F5EAD0 /* EditViewController.m */; };
 		948EADDA167CBBE400F5EAD0 /* EditViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 948EADD8167CBBE400F5EAD0 /* EditViewController.xib */; };
+		94B52E4816833DB7009439F2 /* DbListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 94B52E4616833DB6009439F2 /* DbListViewController.m */; };
+		94B52E4916833DB7009439F2 /* DbListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 94B52E4716833DB6009439F2 /* DbListViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -60,6 +62,9 @@
 		948EADD6167CBBE400F5EAD0 /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		948EADD7167CBBE400F5EAD0 /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		948EADD8167CBBE400F5EAD0 /* EditViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditViewController.xib; sourceTree = "<group>"; };
+		94B52E4516833DB5009439F2 /* DbListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DbListViewController.h; sourceTree = "<group>"; };
+		94B52E4616833DB6009439F2 /* DbListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DbListViewController.m; sourceTree = "<group>"; };
+		94B52E4716833DB6009439F2 /* DbListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DbListViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +133,9 @@
 				948EADD6167CBBE400F5EAD0 /* EditViewController.h */,
 				948EADD7167CBBE400F5EAD0 /* EditViewController.m */,
 				948EADD8167CBBE400F5EAD0 /* EditViewController.xib */,
+				94B52E4516833DB5009439F2 /* DbListViewController.h */,
+				94B52E4616833DB6009439F2 /* DbListViewController.m */,
+				94B52E4716833DB6009439F2 /* DbListViewController.xib */,
 			);
 			path = PrepareFor1;
 			sourceTree = "<group>";
@@ -204,6 +212,7 @@
 				9485C0AA167394FA00FE79EE /* MainViewController.xib in Resources */,
 				9485C0AF167395BC00FE79EE /* ItemsListViewController.xib in Resources */,
 				948EADDA167CBBE400F5EAD0 /* EditViewController.xib in Resources */,
+				94B52E4916833DB7009439F2 /* DbListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -223,6 +232,7 @@
 				948CBD0B1676629300E420D6 /* Item.m in Sources */,
 				948CBD0F1676637F00E420D6 /* XMLParserDelegate.m in Sources */,
 				948EADD9167CBBE400F5EAD0 /* EditViewController.m in Sources */,
+				94B52E4816833DB7009439F2 /* DbListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -40,11 +40,7 @@
 }
 
 - (void) parserDidEndDocument: (NSXMLParser *)parser {
-    id button = [self.viewController performSelector:@selector(storeListButton)];
-    [button setHidden:FALSE];
-    button = [self.viewController performSelector:@selector(goToListButton)];
-    [button setHidden:FALSE];
-
+    [self.viewController performSelector:@selector(showButtons)];
 }
 
 - (void) parserDidStartDocument: (NSXMLParser *)parser {

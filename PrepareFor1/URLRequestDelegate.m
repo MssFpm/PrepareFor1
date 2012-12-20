@@ -41,6 +41,7 @@
     id view = [self.parentViewController view];
     id spinner = [view viewWithTag:1];
     [spinner stopAnimating];
+    [spinner removeFromSuperview];
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
@@ -50,6 +51,7 @@
     id view = [self.parentViewController view];
     id spinner = [view viewWithTag:1];
     [spinner stopAnimating];
+     [spinner removeFromSuperview];
     NSLog(@"%@", spinner);
     NSArray *dirPaths;
     dirPaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory,
